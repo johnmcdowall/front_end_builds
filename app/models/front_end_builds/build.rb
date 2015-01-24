@@ -9,6 +9,7 @@ module FrontEndBuilds
     end
 
     belongs_to :app, class_name: "FrontEndBuilds::App"
+    belongs_to :pubkey, class_name: "FrontEndBuilds::Pubkey"
 
     validates :app, presence: true
     validates :sha, presence: true

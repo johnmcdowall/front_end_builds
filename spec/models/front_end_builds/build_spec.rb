@@ -4,6 +4,7 @@ module FrontEndBuilds
   RSpec.describe Build, :type => :model do
 
     it { should belong_to(:app) }
+    it { should belong_to(:pubkey) }
 
     it { should validate_presence_of(:app) }
     it { should validate_presence_of(:sha) }
