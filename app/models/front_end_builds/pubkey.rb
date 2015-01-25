@@ -15,6 +15,10 @@ module FrontEndBuilds
       end
     end
 
+    def verify(signature, app, endpoint)
+
+    end
+
     def serialize
       {
         id: id,
